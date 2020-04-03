@@ -26,18 +26,15 @@ jobs:
       run: git submodule update --init --recursive
     - name: Kernel Configure
       run: |
-        ./build config           \
-                model=G973F      \
-                name=CRUEL-V3.2  \
-                +magisk          \
-                +nohardening     \
-                +ttl             \
-                +wireguard       \
-                +cifs            \
-                +sdfat           \
-                +ntfs            \
-                +tcp_cubic       \
-                +morosound       \
+        ./build config           
+                model=N975F      
+                name=REM 
+                +magisk         
+                +nohardening     
+                +ttl             
+                +wireguard       
+                +sdfat           
+                +morosound       
                 +boeffla_wl_blocker
     - name: Kernel Build
       run: ./build :build
