@@ -26,18 +26,18 @@ jobs:
       run: git submodule update --init --recursive
     - name: Kernel Configure
       run: |
-        ./build config           
-                model=N975F      
-                name=REM         
-                +magisk          
-                +nohardening     
-                +ttl             
-                +wireguard       
-                +sdfat           
-                +ntfs            
-                +tcp_cubic       
-                +morosound                 
-                +boeffla_wl_blocker
+        ./build config           \
+                model=N975F      \
+                name=REM         \
+                +magisk          \
+                +nohardening     \
+                +ttl             \
+                +wireguard       \
+                +sdfat           \
+                +ntfs            \
+                +tcp_cubic       \
+                +morosound       \         
+                +boeffla_wl_blocker \
     - name: Kernel Build
       run: ./build :build
     - name: Create boot.img
