@@ -42,7 +42,6 @@ jobs:
                 +morosound               \
                 +mass_storage            \
                 +nodebug                 \
-                
                 +boeffla_wl_blocker
     - name: Show information about build
       run: cat build.info
